@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package example;
+
+// 定义服务
+service ExampleService {
+  rpc ExampleMethod(Request) returns (Response);
+}
+
+// 定义请求消息
+message Request {
+  string message = 1;
+}
+
+// 定义响应消息
+message Response {
+  string message = 1;
+}
